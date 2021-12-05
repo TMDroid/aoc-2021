@@ -3,12 +3,12 @@ package ro.dannyb.aoc.day2
 import ro.dannyb.aoc.util.FileUtils
 import java.awt.Point
 
-private const val day = "day2"
+private const val today = "day2"
 
 fun main() {
     var aim = 0
     val position = Point(0, 0)
-    FileUtils.readFile(day) {
+    FileUtils.readFile(today) {
         val coords = it.split(" ")
         val distance = coords[1].toInt()
         when (coords[0]) {

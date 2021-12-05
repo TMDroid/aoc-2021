@@ -2,7 +2,7 @@ package ro.dannyb.aoc.day3
 
 import ro.dannyb.aoc.util.FileUtils
 
-private const val day = "day3"
+private const val today = "day3"
 
 private fun keepNumbersByConditionInPosition(
     numbers: List<List<Char>>,
@@ -31,7 +31,7 @@ fun getSuitableNumberByFilteringList(numbers: List<List<Char>>, transformation: 
 }
 
 fun main() {
-    val lines = FileUtils.readFile(day)
+    val lines = FileUtils.readFile(today)
         .map { bits -> bits.trim().toList() }
 
     val oxygenGeneratorRating = getSuitableNumberByFilteringList(lines) { result ->

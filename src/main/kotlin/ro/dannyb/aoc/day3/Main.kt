@@ -2,10 +2,10 @@ package ro.dannyb.aoc.day3
 
 import ro.dannyb.aoc.util.FileUtils
 
-private const val day = "day3"
+private const val today = "day3"
 
 fun main() {
-    val lines = FileUtils.readFile(day)
+    val lines = FileUtils.readFile(today)
         .map { it.trim().toList() }
         .fold(listOf(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)) { x, y ->
             x.zip(y) { l: Int, r: Char ->
